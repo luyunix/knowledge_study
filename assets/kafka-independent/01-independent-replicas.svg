@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="690" viewBox="0 0 640 690" role="img" aria-labelledby="title desc">
+  <title id="title">Kafka 分区被各引擎副本独立读取</title>
+  <desc id="desc">P0 更新商品0、2、4，由S0-A与S0-B各自读取；P1更新商品1、3、5，由S1-A与S1-B各自读取。每个副本有独立索引和位点，不通过另一个副本转发。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#527085"/></marker></defs>
+  <rect width="640" height="690" fill="#ffffff"/>
+  <g font-family="PingFang SC, sans-serif" fill="#172c43">
+    <text x="28" y="44" font-size="28" font-weight="600">分片间分数据，同片副本各读一遍</text>
+    <rect x="28" y="74" width="584" height="70" rx="12" fill="#eaf2fa"/>
+    <text x="48" y="99" font-size="24">Kafka P0：商品 0、2、4 的更新</text>
+    <text x="48" y="133" font-size="20">约定路由到 S0，不依赖自动组分配</text>
+    <path d="M320 144 V164 H165 V188 M320 164 H475 V188" fill="none" stroke="#527085" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M165 175 V188" fill="none" stroke="#527085" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="28" y="192" width="274" height="124" rx="12" fill="#eaf5f0"/>
+    <rect x="338" y="192" width="274" height="124" rx="12" fill="#eaf5f0"/>
+    <text x="44" y="226" font-size="24">S0-A：assign(P0)</text>
+    <text x="44" y="260" font-size="21">group：product-s0-a</text>
+    <text x="44" y="295" font-size="23">本地索引 + 位点 A</text>
+    <text x="354" y="226" font-size="24">S0-B：assign(P0)</text>
+    <text x="354" y="260" font-size="21">group：product-s0-b</text>
+    <text x="354" y="295" font-size="23">本地索引 + 位点 B</text>
+    <rect x="28" y="348" width="584" height="70" rx="12" fill="#eaf2fa"/>
+    <text x="48" y="373" font-size="24">Kafka P1：商品 1、3、5 的更新</text>
+    <text x="48" y="407" font-size="20">约定路由到 S1，两份副本独立追赶</text>
+    <path d="M320 418 V438 H165 V462 M320 438 H475 V462" fill="none" stroke="#527085" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M165 449 V462" fill="none" stroke="#527085" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="28" y="466" width="274" height="124" rx="12" fill="#eaf5f0"/>
+    <rect x="338" y="466" width="274" height="124" rx="12" fill="#eaf5f0"/>
+    <text x="44" y="500" font-size="24">S1-A：assign(P1)</text>
+    <text x="44" y="534" font-size="21">group：product-s1-a</text>
+    <text x="44" y="569" font-size="23">本地索引 + 位点 A</text>
+    <text x="354" y="500" font-size="24">S1-B：assign(P1)</text>
+    <text x="354" y="534" font-size="21">group：product-s1-b</text>
+    <text x="354" y="569" font-size="23">本地索引 + 位点 B</text>
+    <text x="28" y="633" font-size="23">箭头表示读取关系，不表示 Kafka 主动推送。</text>
+    <text x="28" y="668" font-size="23">没有副本间复制；每份索引由自己的消费者更新。</text>
+  </g>
+</svg>

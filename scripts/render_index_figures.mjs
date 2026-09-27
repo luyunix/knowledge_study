@@ -16,6 +16,7 @@ const configs={
   '索引结构图解_正排与倒排.md':{images:8,dir:'assets/index-structures'},
   '索引结构进阶_FST与整数压缩.md':{images:5,dir:'assets/index-structures'},
   'Kafka到检索引擎_数据链路与高可用.md':{images:7,dir:'assets/kafka-ingestion'},
+  'Kafka_分片副本独立消费与Java实现.md':{images:1,dir:'assets/kafka-independent'},
   'JVM_类加载隔离与内存回收.md':{images:1,dir:'assets/engineering-foundations'},
   'Java_集合并发与缓存正确性.md':{images:1,dir:'assets/engineering-foundations'},
   'Redis_数据结构热点与缓存一致性.md':{images:1,dir:'assets/engineering-foundations'},
