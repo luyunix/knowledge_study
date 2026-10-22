@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="340" viewBox="0 0 560 340">
+  <title>请求经 Proxy 选定 v2，排除排空的 E，最后到达 Pod D</title>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#555" stroke-width="1"/></marker>
+  </defs>
+  <rect width="560" height="340" fill="#fff"/>
+  <g fill="none" stroke="#555" stroke-width="1.2">
+    <rect x="155" y="65" width="230" height="44"/>
+    <rect x="155" y="151" width="230" height="44"/>
+    <rect x="155" y="237" width="230" height="44"/>
+    <path d="M270 37 V59" marker-end="url(#arrow)"/>
+    <path d="M270 109 V145" marker-end="url(#arrow)"/>
+    <path d="M270 195 V231" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="PingFang SC, sans-serif" font-size="18" fill="#222" text-anchor="middle">
+    <text x="270" y="28">请求</text>
+    <text x="270" y="94">Proxy：选定 v2</text>
+    <text x="270" y="180">v2 实例：D、E</text>
+    <text x="270" y="266">可用落点：Pod D</text>
+    <text x="270" y="319" font-size="16" fill="#666">Pod 内部自行管理 worker</text>
+  </g>
+  <g font-family="PingFang SC, sans-serif" font-size="16" fill="#666">
+    <text x="294" y="136">排除 v1</text>
+    <text x="294" y="222">排除正在排空的 E</text>
+  </g>
+</svg>

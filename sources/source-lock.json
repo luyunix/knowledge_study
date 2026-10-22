@@ -1,0 +1,3181 @@
+[
+  {
+    "id": "jdk",
+    "repo": "openjdk/jdk17u",
+    "ref": "jdk-17.0.14+7",
+    "commit": "c5c90ffa45d0c14bcb013164f0992938eb4740ab",
+    "files": [
+      {
+        "path": "src/java.base/share/classes/java/lang/ClassLoader.java",
+        "sha256": "37df05f93da920426d79281606bbfc12172b819723cc33d66789187fdd707ef0",
+        "lines": 2748,
+        "symbols": {
+          "loadClass": [
+            124,
+            125,
+            171,
+            179,
+            184,
+            195,
+            199,
+            511,
+            513,
+            524,
+            525,
+            538,
+            569,
+            579,
+            632,
+            663,
+            707,
+            796,
+            868,
+            1257
+          ],
+          "defineClass": [
+            164,
+            165,
+            186,
+            196,
+            799,
+            800,
+            803,
+            806,
+            820,
+            824,
+            825,
+            876,
+            879,
+            913,
+            939,
+            1011,
+            1016,
+            1017,
+            1027,
+            1034,
+            1037,
+            1047,
+            1048,
+            1081,
+            1086,
+            1095,
+            1102,
+            1107,
+            1108,
+            1113,
+            1116,
+            1121,
+            1134,
+            1224,
+            2131,
+            2133,
+            2153
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/lang/ClassLoader.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/java.base/share/classes/java/net/URLClassLoader.java",
+        "sha256": "3870687d8cc6d06c61495466c523224fe3fc6703eab68c3b06e536ad5330f3ec",
+        "lines": 874,
+        "symbols": {
+          "close": [
+            253,
+            255,
+            259,
+            268,
+            272,
+            273,
+            299,
+            300,
+            301,
+            305,
+            306,
+            322,
+            324,
+            327,
+            329,
+            339,
+            343,
+            347,
+            349,
+            351,
+            353,
+            354,
+            357,
+            362,
+            384,
+            411,
+            619,
+            643
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/net/URLClassLoader.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/hotspot/share/oops/instanceKlass.cpp",
+        "sha256": "e955102419160be6604e61268012237e91d5026d738f9d8ee2c558cf1291f1d7",
+        "lines": 4279,
+        "symbols": {
+          "initialize_impl": [
+            727,
+            766,
+            804,
+            1077
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/hotspot/share/oops/instanceKlass.cpp",
+        "status": "ok"
+      },
+      {
+        "path": "src/hotspot/share/classfile/classLoaderDataGraph.cpp",
+        "sha256": "4db03baab1d4cedab8991d55132fea654675c9eb4fa46e23b6b9562fa74128b4",
+        "lines": 689,
+        "symbols": {
+          "do_unloading": [
+            499,
+            534
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/hotspot/share/classfile/classLoaderDataGraph.cpp",
+        "status": "ok"
+      },
+      {
+        "path": "src/hotspot/share/memory/metaspace/metaspaceArena.cpp",
+        "sha256": "d21730a404b2bc9406305edd9cba6a3cf16f2dc1cc456bbe1620cfded6e6304b",
+        "lines": 497,
+        "symbols": {
+          "allocate": [
+            72,
+            87,
+            220,
+            221,
+            223,
+            225,
+            232,
+            238,
+            278,
+            288,
+            290,
+            306,
+            307,
+            310,
+            342,
+            348,
+            351,
+            365,
+            367,
+            466
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/hotspot/share/memory/metaspace/metaspaceArena.cpp",
+        "status": "ok"
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/HashMap.java",
+        "sha256": "064460fdae590efb2046beee631b3de8c9232b8b99f2b4b16607a7dbce1315cc",
+        "lines": 2548,
+        "symbols": {
+          "resize": [
+            264,
+            271,
+            385,
+            413,
+            505,
+            508,
+            627,
+            661,
+            675,
+            751,
+            756,
+            1198,
+            1298,
+            1363,
+            2281
+          ],
+          "treeifyBin": [
+            642,
+            753,
+            1234,
+            1332,
+            1403,
+            1914
+          ],
+          "find(int h": [
+            2009
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/util/HashMap.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java",
+        "sha256": "535b52ff8f048b95a60c9b47d2ac164ac5c7f7f65ed2fc9a46003a0821986398",
+        "lines": 6382,
+        "symbols": {
+          "putVal": [
+            1006,
+            1010,
+            1089,
+            1445,
+            1541,
+            4652,
+            4672,
+            4823
+          ],
+          "transfer": [
+            377,
+            379,
+            390,
+            396,
+            400,
+            563,
+            805,
+            2229,
+            2316,
+            2317,
+            2318,
+            2348,
+            2351,
+            2354,
+            2361,
+            2371,
+            2374,
+            2415,
+            2424,
+            2438,
+            2450,
+            6359
+          ],
+          "computeIfAbsent": [
+            137,
+            139,
+            285,
+            1691,
+            2266
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/LinkedHashMap.java",
+        "sha256": "2ef6f6709032f5c4c65c5ecd16245ae2ec6fd24f7db12f3a7bc166735e25a5e9",
+        "lines": 792,
+        "symbols": {
+          "afterNodeAccess": [
+            306,
+            444,
+            456
+          ],
+          "afterNodeInsertion": [
+            298
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/util/LinkedHashMap.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/java.base/share/classes/java/lang/ThreadLocal.java",
+        "sha256": "927878fc9f77f74589168e832dc8f883a2e819b71ab6f657336dd23350ead860",
+        "lines": 736,
+        "symbols": {
+          "expungeStaleEntry": [
+            459,
+            516,
+            562,
+            573,
+            590,
+            604,
+            674,
+            732
+          ],
+          "getEntry": [
+            165,
+            185,
+            426,
+            433,
+            439,
+            443,
+            451
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/lang/ThreadLocal.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/concurrent/ThreadPoolExecutor.java",
+        "sha256": "f2324097c15108638d1e5d76589000013dd0e5e2383ac0322194836ab7a27912",
+        "lines": 2129,
+        "symbols": {
+          "execute": [
+            49,
+            83,
+            114,
+            205,
+            208,
+            220,
+            225,
+            519,
+            881,
+            1074,
+            1175,
+            1176,
+            1207,
+            1208,
+            1243,
+            1244,
+            1278,
+            1279,
+            1316,
+            1322,
+            1328,
+            1370,
+            1535,
+            1576,
+            1601,
+            1770,
+            1942,
+            1951,
+            1957,
+            2018,
+            2032,
+            2033,
+            2058,
+            2059,
+            2082,
+            2083,
+            2091,
+            2104,
+            2115,
+            2119,
+            2120,
+            2125
+          ],
+          "runWorker": [
+            599,
+            628,
+            633,
+            635,
+            1115
+          ],
+          "processWorkerExit": [
+            434,
+            989,
+            1082,
+            1150
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/util/concurrent/ThreadPoolExecutor.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/concurrent/locks/AbstractQueuedSynchronizer.java",
+        "sha256": "dac55b5377f9784fb05549e86f15cfd135fb5e4a559395796f89b3c78df0f0f3",
+        "lines": 1863,
+        "symbols": {
+          "acquire": [
+            53,
+            66,
+            71,
+            72,
+            73,
+            75,
+            77,
+            89,
+            90,
+            154,
+            171,
+            177,
+            184,
+            206,
+            207,
+            251,
+            263,
+            275,
+            297,
+            350,
+            356,
+            365,
+            377,
+            381,
+            384,
+            386,
+            406,
+            407,
+            431,
+            436,
+            574,
+            626,
+            629,
+            634,
+            636,
+            667,
+            670,
+            672,
+            677,
+            731,
+            764,
+            790,
+            791,
+            792,
+            795,
+            803,
+            804,
+            808,
+            833,
+            846,
+            847,
+            848,
+            851,
+            858,
+            859,
+            863,
+            865,
+            869,
+            870,
+            894,
+            932,
+            936,
+            938,
+            950,
+            955,
+            958,
+            963,
+            972,
+            976,
+            986,
+            1021,
+            1025,
+            1027,
+            1037,
+            1043,
+            1047,
+            1052,
+            1060,
+            1064,
+            1074,
+            1104,
+            1107,
+            1109,
+            1119,
+            1120,
+            1177,
+            1190,
+            1201,
+            1211,
+            1218,
+            1223,
+            1245,
+            1250,
+            1263,
+            1284,
+            1286,
+            1304,
+            1306,
+            1504,
+            1526,
+            1530,
+            1568,
+            1569,
+            1577,
+            1596,
+            1609,
+            1610,
+            1621,
+            1641,
+            1659,
+            1660,
+            1673,
+            1682,
+            1701,
+            1702,
+            1715,
+            1724,
+            1742,
+            1743,
+            1758,
+            1767
+          ],
+          "release": [
+            32,
+            54,
+            87,
+            88,
+            185,
+            216,
+            217,
+            253,
+            275,
+            295,
+            797,
+            820,
+            823,
+            828,
+            829,
+            832,
+            853,
+            882,
+            884,
+            889,
+            890,
+            893,
+            1001,
+            1006,
+            1088,
+            1093,
+            1501,
+            1517,
+            1565,
+            1606,
+            1656,
+            1698,
+            1739
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/util/concurrent/locks/AbstractQueuedSynchronizer.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/concurrent/locks/ReentrantLock.java",
+        "sha256": "3fa6f4aaf254b75355b1dffc993a64f3ae315098f98455ad68f48e46b5faf417",
+        "lines": 798,
+        "symbols": {
+          "tryAcquire": [
+            168,
+            241,
+            279
+          ],
+          "tryRelease": [
+            172
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/util/concurrent/locks/ReentrantLock.java",
+        "status": "ok"
+      },
+      {
+        "path": "src/hotspot/share/classfile/classFileParser.cpp",
+        "sha256": "61c7378eef4ecb37c51635e053d4ea3ba51f79eb7fb53c0c62a9e87e83e61d39",
+        "lines": 6073,
+        "symbols": {
+          "ClassFileParser::ClassFileParser": [
+            5503
+          ],
+          "parse_stream": [
+            5598,
+            5689
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/hotspot/share/classfile/classFileParser.cpp",
+        "status": "ok"
+      },
+      {
+        "path": "src/hotspot/share/interpreter/linkResolver.cpp",
+        "sha256": "e707d8bdba70e96bedb9860ecc40caeae1d2753056ded8693f3fc81a18007e53",
+        "lines": 1856,
+        "symbols": {
+          "resolve_method": [
+            595,
+            610,
+            628,
+            630,
+            708,
+            1084,
+            1124,
+            1297,
+            1306
+          ],
+          "resolve_field": [
+            938,
+            940,
+            943
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/hotspot/share/interpreter/linkResolver.cpp",
+        "status": "ok"
+      },
+      {
+        "path": "src/hotspot/share/classfile/verifier.cpp",
+        "sha256": "ee1cf5004ecf8b6180d21335a5a402bc402a00cf5ec219efa9ad89a9de181f46",
+        "lines": 3173,
+        "symbols": {
+          "Verifier::verify": [
+            156,
+            178,
+            629,
+            707,
+            1867,
+            1919,
+            1943,
+            1983,
+            2021,
+            2032,
+            2051,
+            2063,
+            2148,
+            2228,
+            2311,
+            2649,
+            2788,
+            3016,
+            3057,
+            3064,
+            3073,
+            3080,
+            3089,
+            3095,
+            3102,
+            3111,
+            3117,
+            3126,
+            3132,
+            3138
+          ]
+        },
+        "url": "https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/hotspot/share/classfile/verifier.cpp",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "redis",
+    "repo": "redis/redis",
+    "ref": "7.2.4",
+    "commit": "d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7",
+    "files": [
+      {
+        "path": "src/t_list.c",
+        "sha256": "b7d249362d651fbd3113b9100655c8c11014e015eecfc78fb6f887141510757e",
+        "lines": 1388,
+        "symbols": {
+          "listType": [
+            42,
+            87,
+            132,
+            138,
+            141,
+            147,
+            149,
+            150,
+            153,
+            155,
+            158,
+            166,
+            195,
+            224,
+            235,
+            237,
+            257,
+            275,
+            284,
+            308,
+            328,
+            333,
+            340,
+            363,
+            384,
+            408,
+            420,
+            449,
+            470,
+            501,
+            503,
+            507,
+            538,
+            539,
+            559,
+            562,
+            563,
+            564,
+            565,
+            570,
+            583,
+            590,
+            602,
+            603,
+            608,
+            609,
+            619,
+            632,
+            633,
+            640,
+            642,
+            660,
+            672,
+            728,
+            763,
+            769,
+            807,
+            815,
+            822,
+            848,
+            902,
+            933,
+            937,
+            1020,
+            1021,
+            1022,
+            1023,
+            1025,
+            1026,
+            1042,
+            1069,
+            1072,
+            1074,
+            1077,
+            1078,
+            1079,
+            1080,
+            1086,
+            1093,
+            1097,
+            1111,
+            1112,
+            1147,
+            1156,
+            1161,
+            1231,
+            1250,
+            1303
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/t_list.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/quicklist.c",
+        "sha256": "c072117d5bce060b2fb5ecd34e8df579ec0546452f0d331648606688c1fb1439",
+        "lines": 3257,
+        "symbols": {
+          "quicklistPush": [
+            552,
+            580,
+            1486,
+            1600,
+            1609,
+            1611,
+            1990,
+            1998,
+            2008,
+            2021,
+            2034,
+            2047,
+            2071,
+            2095,
+            2116,
+            2117,
+            2118,
+            2119,
+            2137,
+            2149,
+            2150,
+            2151,
+            2152,
+            2154,
+            2180,
+            2200,
+            2215,
+            2239,
+            2268,
+            2291,
+            2311,
+            2339,
+            2368,
+            2382,
+            2397,
+            2399,
+            2401,
+            2402,
+            2403,
+            2466,
+            2484,
+            2512,
+            2524,
+            2538,
+            2556,
+            2574,
+            2587,
+            2609,
+            2619,
+            2630,
+            2641,
+            2652,
+            2663,
+            2674,
+            2684,
+            2693,
+            2694,
+            2695,
+            2696,
+            2759,
+            2761,
+            2781,
+            2782,
+            2783,
+            2784,
+            2785,
+            2801,
+            2830,
+            2874,
+            2875,
+            2876,
+            2877,
+            2878,
+            2918,
+            2944,
+            2976,
+            2995,
+            3025,
+            3052,
+            3080,
+            3081,
+            3139,
+            3140,
+            3141,
+            3142,
+            3143,
+            3167
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/quicklist.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/listpack.c",
+        "sha256": "d6627248e11c7a32267e55c412b248f74fb94d4a5fc15e7a8e585d8f1a14e60e",
+        "lines": 2660,
+        "symbols": {
+          "lpInsert": [
+            780,
+            929,
+            930,
+            933,
+            936,
+            938,
+            943,
+            950,
+            957,
+            961,
+            962,
+            966,
+            973,
+            976,
+            980,
+            983,
+            988,
+            996
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/listpack.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/t_zset.c",
+        "sha256": "c87dcf66de88ca176280cf546c0fad25d1ee4cf20b4efccda00b51a60f7ed5c7",
+        "lines": 4460,
+        "symbols": {
+          "zslInsert": [
+            135,
+            157,
+            298,
+            300,
+            1245,
+            1479,
+            1656,
+            2432,
+            2472,
+            2737,
+            2806
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/t_zset.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/dict.c",
+        "sha256": "81764d1b75a69899ae4ce2cffb344716cb1306002d325644f36d2bfbff08581a",
+        "lines": 1749,
+        "symbols": {
+          "dictRehash": [
+            295,
+            392,
+            393,
+            399,
+            414,
+            415,
+            564,
+            674,
+            717,
+            992,
+            1059,
+            1447,
+            1689
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/dict.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/evict.c",
+        "sha256": "4572a13d6a5d06aab18a2194c5f0558a743f58d7fe2615c580015e491d103716",
+        "lines": 757,
+        "symbols": {
+          "performEvictions": [
+            44,
+            137,
+            461,
+            538
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/evict.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/cluster.c",
+        "sha256": "e85889fc8248ad9f45e9709082b00541dd55d1be5a3f676a6f00c31b7fd22465",
+        "lines": 7717,
+        "symbols": {
+          "keyHashSlot": [
+            1352,
+            6231,
+            7297,
+            7522,
+            7563,
+            7580,
+            7612,
+            7677
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/cluster.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/lazyfree.c",
+        "sha256": "d559ca70d7c8b1bd07af7e861892437f2ca310ba82917a5776a4a4a78f858bef",
+        "lines": 227,
+        "symbols": {
+          "lazyfreeGetFreeEffort": [
+            104,
+            160
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/lazyfree.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/db.c",
+        "sha256": "84fd7f44d0971cfea3d2a8cca9edd5d90ef59262635c7b3bcbaedbfcfb1365d9",
+        "lines": 2558,
+        "symbols": {
+          "expireIfNeeded": [
+            44,
+            48,
+            107,
+            340,
+            347,
+            722,
+            1141,
+            1775
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/db.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/networking.c",
+        "sha256": "60f35403923bc4c75e0acdda748bb090f1b316815fa6bdeaa26e39fffdbcf2a1",
+        "lines": 4578,
+        "symbols": {
+          "processInputBuffer": [
+            2250,
+            2510,
+            2520,
+            2713
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/networking.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/aof.c",
+        "sha256": "31e7aafcc65c46522bcf75ea2f49d3e12744545a24b5ea07b08026bc9da85d1b",
+        "lines": 2742,
+        "symbols": {
+          "rewriteAppendOnlyFileBackground": [
+            777,
+            995,
+            2351,
+            2425,
+            2504
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/aof.c",
+        "status": "ok"
+      },
+      {
+        "path": "src/replication.c",
+        "sha256": "853289bdfa30da64080b88e916f56dd545202bca874282c46c9e0c3462a385e9",
+        "lines": 4241,
+        "symbols": {
+          "masterTryPartialResynchronization": [
+            740,
+            1015
+          ]
+        },
+        "url": "https://github.com/redis/redis/blob/d2c8a4b91e8c0e6aefd1f5bc0bf582cddbe046b7/src/replication.c",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "mysql",
+    "repo": "mysql/mysql-server",
+    "ref": "mysql-8.0.36",
+    "commit": "49ef33f7edadef3ae04665e73d1babd40179a4f1",
+    "files": [
+      {
+        "path": "sql/sql_optimizer.cc",
+        "sha256": "e400c85cf1add52ea822c620a1933221442c70ae2b776f5e7716bde4530ea320",
+        "lines": 11712,
+        "symbols": {
+          "test_if_skip_sort_order": [
+            150,
+            1546,
+            1567,
+            1682,
+            1710,
+            2092,
+            2186,
+            3027,
+            11549
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/sql/sql_optimizer.cc",
+        "status": "ok"
+      },
+      {
+        "path": "sql/filesort.cc",
+        "sha256": "7a3e42d544985fbcd5e0f94a41fa945b870e2b5a01a99365aafad32413107c9f",
+        "lines": 2418,
+        "symbols": {
+          "check_if_pq_applicable": [
+            157,
+            446,
+            1645
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/sql/filesort.cc",
+        "status": "ok"
+      },
+      {
+        "path": "sql/range_optimizer/range_optimizer.cc",
+        "sha256": "f55520cd7a6f6a1edff95f85488c71657d0a1653aeee7097c3b89c520c58d77d",
+        "lines": 1894,
+        "symbols": {
+          "test_quick_select": [
+            43,
+            189,
+            306,
+            435,
+            523
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/sql/range_optimizer/range_optimizer.cc",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/row/row0sel.cc",
+        "sha256": "e8e2bf9fa06bcc65bbb6f9317c66c33b14cca67d630886af2c835ec7e6bdec2c",
+        "lines": 6447,
+        "symbols": {
+          "row_search_mvcc": [
+            4246,
+            4264,
+            4399,
+            4952,
+            6119,
+            6162
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/row/row0sel.cc",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/include/read0types.h",
+        "sha256": "32cd8c95b9277fb29c717e67d98f348655e71bb88587a0eb6c2f70c4220a4d6b",
+        "lines": 321,
+        "symbols": {
+          "changes_visible": [
+            162
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/include/read0types.h",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/row/row0vers.cc",
+        "sha256": "5ccf1f508c5a06d74fe39df8aa7611246d6db9fc5a470cb694901ada45dd5418",
+        "lines": 1468,
+        "symbols": {
+          "row_vers_build_for_consistent_read": [
+            1249
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/row/row0vers.cc",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/buf/buf0lru.cc",
+        "sha256": "9debf4cdaeddb8d1cd1602f85abf6ecf0e0f246a5ea077f2e82d25388a7e9600",
+        "lines": 2639,
+        "symbols": {
+          "buf_LRU_make_block_young": [
+            1732
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/buf/buf0lru.cc",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/lock/lock0lock.cc",
+        "sha256": "c9b76b2d4e4bd91375c1d11634f14a8983dec26dab7e21266f3476ad4e03af5d",
+        "lines": 6531,
+        "symbols": {
+          "lock_rec": [
+            186,
+            333,
+            334,
+            350,
+            368,
+            374,
+            431,
+            440,
+            450,
+            523,
+            530,
+            537,
+            565,
+            591,
+            624,
+            647,
+            654,
+            683,
+            686,
+            687,
+            699,
+            720,
+            721,
+            728,
+            732,
+            740,
+            747,
+            749,
+            756,
+            763,
+            770,
+            784,
+            785,
+            792,
+            809,
+            839,
+            842,
+            856,
+            860,
+            870,
+            877,
+            928,
+            1074,
+            1094,
+            1203,
+            1223,
+            1236,
+            1250,
+            1314,
+            1316,
+            1349,
+            1369,
+            1538,
+            1546,
+            1556,
+            1561,
+            1566,
+            1568,
+            1592,
+            1613,
+            1636,
+            1643,
+            1662,
+            1664,
+            1665,
+            1667,
+            1695,
+            1725,
+            1730,
+            1745,
+            1747,
+            1753,
+            1754,
+            1766,
+            1796,
+            1799,
+            1800,
+            1820,
+            1863,
+            1879,
+            1910,
+            1935,
+            1954,
+            1961,
+            1976,
+            1989,
+            1996,
+            1997,
+            2001,
+            2070,
+            2107,
+            2114,
+            2153,
+            2199,
+            2202,
+            2312,
+            2316,
+            2366,
+            2372,
+            2374,
+            2378,
+            2382,
+            2383,
+            2391,
+            2392,
+            2393,
+            2410,
+            2411,
+            2412,
+            2419,
+            2436,
+            2445,
+            2450,
+            2453,
+            2456,
+            2460,
+            2470,
+            2476,
+            2477,
+            2478,
+            2485,
+            2495,
+            2496,
+            2498,
+            2500,
+            2507,
+            2512,
+            2514,
+            2516,
+            2534,
+            2562,
+            2578,
+            2579,
+            2585,
+            2588,
+            2597,
+            2610,
+            2611,
+            2617,
+            2618,
+            2619,
+            2627,
+            2646,
+            2650,
+            2651,
+            2654,
+            2663,
+            2667,
+            2696,
+            2708,
+            2730,
+            2744,
+            2749,
+            2755,
+            2796,
+            2800,
+            2810,
+            2817,
+            2837,
+            2838,
+            2892,
+            2897,
+            2905,
+            2906,
+            2930,
+            2931,
+            2970,
+            2975,
+            2984,
+            2985,
+            2993,
+            3021,
+            3022,
+            3050,
+            3055,
+            3067,
+            3084,
+            3090,
+            3108,
+            3115,
+            3120,
+            3123,
+            3141,
+            3155,
+            3156,
+            3168,
+            3185,
+            3210,
+            3217,
+            3224,
+            3229,
+            3232,
+            3242,
+            3247,
+            3249,
+            3264,
+            3265,
+            3266,
+            3281,
+            3283,
+            3293,
+            3295,
+            3301,
+            3325,
+            3350,
+            3354,
+            3363,
+            3377,
+            3386,
+            3389,
+            3394,
+            3871,
+            3980,
+            3984,
+            3985,
+            3987,
+            3997,
+            4017,
+            4023,
+            4025,
+            4029,
+            4030,
+            4032,
+            4035,
+            4067,
+            4074,
+            4079,
+            4098,
+            4105,
+            4322,
+            4371,
+            4432,
+            4521,
+            4536,
+            4548,
+            4552,
+            4556,
+            4572,
+            4573,
+            4839,
+            4853,
+            4910,
+            4913,
+            4935,
+            5075,
+            5110,
+            5120,
+            5145,
+            5150,
+            5189,
+            5205,
+            5214,
+            5224,
+            5225,
+            5272,
+            5275,
+            5292,
+            5329,
+            5342,
+            5384,
+            5404,
+            5451,
+            5461,
+            5466,
+            5471,
+            5491,
+            5496,
+            5504,
+            5507,
+            5516,
+            5529,
+            5530,
+            5544,
+            5584,
+            5590,
+            5645,
+            5687,
+            5701,
+            5736,
+            5752,
+            6049,
+            6060,
+            6068,
+            6079,
+            6303,
+            6377,
+            6380
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/lock/lock0lock.cc",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/btr/btr0cur.cc",
+        "sha256": "6f8826731e9de036bdbb360b277edf2ed6c145c56b2fcd0a8a0a6c83cdca6e61",
+        "lines": 5614,
+        "symbols": {
+          "btr_cur_search_to_nth_level": [
+            125,
+            128,
+            618,
+            1714,
+            2392,
+            5060,
+            5096
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/btr/btr0cur.cc",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/read/read0read.cc",
+        "sha256": "3fa5d2a43cd3b4fb851769c47a0cfcce6cf926a4dc2ef002c572aa2f4d7094ba",
+        "lines": 747,
+        "symbols": {
+          "view_open": [
+            528
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/read/read0read.cc",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/include/buf0buf.ic",
+        "sha256": "dc1ad4fa42ba447dffc222cc6f1bd2a90d9e93b24418744fc3f717c905e885f0",
+        "lines": 1132,
+        "symbols": {
+          "buf_page_peek_if_too_old": [
+            179
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/include/buf0buf.ic",
+        "status": "ok"
+      },
+      {
+        "path": "sql/binlog.cc",
+        "sha256": "71ebeca9f580dffd118b49a30b7568ed3a80111de82019cac324033689b0abe3",
+        "lines": 11701,
+        "symbols": {
+          "ordered_commit": [
+            1821,
+            1826,
+            1878,
+            2606,
+            2609,
+            2610,
+            2616,
+            2812,
+            8137,
+            8334,
+            8378,
+            8513,
+            8568,
+            8742,
+            8750,
+            8827,
+            8914,
+            8935,
+            8937,
+            8938
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/sql/binlog.cc",
+        "status": "ok"
+      },
+      {
+        "path": "storage/innobase/trx/trx0trx.cc",
+        "sha256": "1d02ada026840f12e29cac5db459a8475806ef422c2e910ad657117c8eb32d3e",
+        "lines": 3712,
+        "symbols": {
+          "trx_commit_for_mysql": [
+            2434,
+            2436,
+            2487
+          ]
+        },
+        "url": "https://github.com/mysql/mysql-server/blob/49ef33f7edadef3ae04665e73d1babd40179a4f1/storage/innobase/trx/trx0trx.cc",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "linux",
+    "repo": "torvalds/linux",
+    "ref": "v6.6",
+    "commit": "ffc253263a1375a65fa6c9f62a893e9767fbebfa",
+    "files": [
+      {
+        "path": "kernel/nsproxy.c",
+        "sha256": "98709aa0e2e4bdee6fe1c9ca962461380322982609355eb0d9f0d1624aa7abe6",
+        "lines": 591,
+        "symbols": {
+          "copy_namespaces": [
+            151
+          ]
+        },
+        "url": "https://github.com/torvalds/linux/blob/ffc253263a1375a65fa6c9f62a893e9767fbebfa/kernel/nsproxy.c",
+        "status": "ok"
+      },
+      {
+        "path": "kernel/cgroup/cgroup.c",
+        "sha256": "455fb81fd5850e986e5e609a53d7333b2104f13b0b42cdfeda86a73c581d1bbb",
+        "lines": 7074,
+        "symbols": {
+          "cgroup_attach_task": [
+            1474,
+            1491,
+            2828,
+            2835,
+            5167
+          ]
+        },
+        "url": "https://github.com/torvalds/linux/blob/ffc253263a1375a65fa6c9f62a893e9767fbebfa/kernel/cgroup/cgroup.c",
+        "status": "ok"
+      },
+      {
+        "path": "kernel/sched/fair.c",
+        "sha256": "7d259d533ffb439992969e5d1d20b27dc64c9203f5c09e09f839047cbd4e40bb",
+        "lines": 13016,
+        "symbols": {
+          "throttle_cfs_rq": [
+            5560,
+            5649,
+            5746,
+            5766,
+            5775,
+            5781,
+            5795,
+            5797,
+            5801,
+            5809,
+            5859,
+            5875,
+            6076,
+            6112,
+            6296,
+            6319
+          ]
+        },
+        "url": "https://github.com/torvalds/linux/blob/ffc253263a1375a65fa6c9f62a893e9767fbebfa/kernel/sched/fair.c",
+        "status": "ok"
+      },
+      {
+        "path": "fs/eventpoll.c",
+        "sha256": "4dfd193f2ac1bd99565b4db85fa1521ce36512e2fbf51c05413401ffd6a36706",
+        "lines": 2479,
+        "symbols": {
+          "ep_poll": [
+            487,
+            489,
+            499,
+            512,
+            514,
+            538,
+            554,
+            599,
+            793,
+            1160,
+            1167,
+            1244,
+            1288,
+            1595,
+            1632,
+            1635,
+            1643,
+            1671,
+            1792,
+            1801,
+            1809,
+            1825,
+            1902,
+            2318
+          ]
+        },
+        "url": "https://github.com/torvalds/linux/blob/ffc253263a1375a65fa6c9f62a893e9767fbebfa/fs/eventpoll.c",
+        "status": "ok"
+      },
+      {
+        "path": "Documentation/admin-guide/cgroup-v2.rst",
+        "sha256": "70ed63f9df4f2ed18266b8afac055848760b60d8a3b0b250b537ac571377bc7d",
+        "lines": 2988,
+        "symbols": {
+          "cpu.max": [
+            1074,
+            1086
+          ]
+        },
+        "url": "https://github.com/torvalds/linux/blob/ffc253263a1375a65fa6c9f62a893e9767fbebfa/Documentation/admin-guide/cgroup-v2.rst",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "k8s",
+    "repo": "kubernetes/kubernetes",
+    "ref": "v1.29.0",
+    "commit": "3f7a50f38688eb332e2a1b013678c6435d539ae6",
+    "files": [
+      {
+        "path": "pkg/controller/deployment/sync.go",
+        "sha256": "78178800d0aba7d52594d6d2e1acb96ed0136b955801eb0e004f6df1f71c5528",
+        "lines": 549,
+        "symbols": {
+          "syncDeploymentStatus": [
+            44,
+            68,
+            475,
+            476
+          ]
+        },
+        "url": "https://github.com/kubernetes/kubernetes/blob/3f7a50f38688eb332e2a1b013678c6435d539ae6/pkg/controller/deployment/sync.go",
+        "status": "ok"
+      },
+      {
+        "path": "pkg/controller/endpointslice/endpointslice_controller.go",
+        "sha256": "9206b583cdf92eda6137fc3950b5fb4f3d9481b9fab341bc5217cb2ac755b263",
+        "lines": 620,
+        "symbols": {
+          "syncService": [
+            64,
+            70,
+            72,
+            295,
+            320
+          ]
+        },
+        "url": "https://github.com/kubernetes/kubernetes/blob/3f7a50f38688eb332e2a1b013678c6435d539ae6/pkg/controller/endpointslice/endpointslice_controller.go",
+        "status": "ok"
+      },
+      {
+        "path": "pkg/controller/podautoscaler/horizontal.go",
+        "sha256": "7d108ccd05da4e09511a3bfc031d89fd26399f4a4ac0398dbf501f679ed6ac72",
+        "lines": 1454,
+        "symbols": {
+          "reconcileAutoscaler": [
+            64,
+            532,
+            740,
+            847
+          ]
+        },
+        "url": "https://github.com/kubernetes/kubernetes/blob/3f7a50f38688eb332e2a1b013678c6435d539ae6/pkg/controller/podautoscaler/horizontal.go",
+        "status": "ok"
+      },
+      {
+        "path": "pkg/controller/podautoscaler/replica_calculator.go",
+        "sha256": "ab5f1d64b9ba0f3e120f21bf41194f0bf33773b029d733ad610397c1170b79d9",
+        "lines": 453,
+        "symbols": {
+          "GetResourceReplicas": [
+            63,
+            65
+          ]
+        },
+        "url": "https://github.com/kubernetes/kubernetes/blob/3f7a50f38688eb332e2a1b013678c6435d539ae6/pkg/controller/podautoscaler/replica_calculator.go",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "netty",
+    "repo": "netty/netty",
+    "ref": "netty-4.1.108.Final",
+    "commit": "3a3f9d13b129555802de5652667ca0af662f554e",
+    "files": [
+      {
+        "path": "transport/src/main/java/io/netty/channel/nio/NioEventLoop.java",
+        "sha256": "8cd749ebcb5b2c75bcef5fec4e907bd6ef68c96556eb7122813d36715926ed4e",
+        "lines": 894,
+        "symbols": {
+          "processSelectedKeys": [
+            553,
+            562,
+            648,
+            650,
+            652,
+            674,
+            714
+          ]
+        },
+        "url": "https://github.com/netty/netty/blob/3a3f9d13b129555802de5652667ca0af662f554e/transport/src/main/java/io/netty/channel/nio/NioEventLoop.java",
+        "status": "ok"
+      },
+      {
+        "path": "transport/src/main/java/io/netty/channel/ChannelOutboundBuffer.java",
+        "sha256": "c1f5bd8e87c8dc5535b67f0fdbbee172aa1c82adbf87bfd49c08ff87799505cb",
+        "lines": 899,
+        "symbols": {
+          "setUnwritable": [
+            188,
+            632
+          ]
+        },
+        "url": "https://github.com/netty/netty/blob/3a3f9d13b129555802de5652667ca0af662f554e/transport/src/main/java/io/netty/channel/ChannelOutboundBuffer.java",
+        "status": "ok"
+      },
+      {
+        "path": "common/src/main/java/io/netty/util/concurrent/SingleThreadEventExecutor.java",
+        "sha256": "8d88bc9374e2d7e4a09ce66b73d99f33873046ae01f50dc6ab94c8ed77fc3bb0",
+        "lines": 1130,
+        "symbols": {
+          "execute": [
+            48,
+            185,
+            265,
+            298,
+            300,
+            402,
+            416,
+            418,
+            502,
+            529,
+            565,
+            571,
+            587,
+            799,
+            816,
+            817,
+            825,
+            827,
+            831,
+            834,
+            986
+          ]
+        },
+        "url": "https://github.com/netty/netty/blob/3a3f9d13b129555802de5652667ca0af662f554e/common/src/main/java/io/netty/util/concurrent/SingleThreadEventExecutor.java",
+        "status": "ok"
+      },
+      {
+        "path": "common/src/main/java/io/netty/util/concurrent/DefaultPromise.java",
+        "sha256": "e00a1c87c88469562dc66e06927a584fa8885a714cf36c6d28eef4b86d407813",
+        "lines": 885,
+        "symbols": {
+          "notifyListeners": [
+            185,
+            205,
+            386,
+            484,
+            492,
+            503,
+            509,
+            538,
+            559,
+            579,
+            636
+          ]
+        },
+        "url": "https://github.com/netty/netty/blob/3a3f9d13b129555802de5652667ca0af662f554e/common/src/main/java/io/netty/util/concurrent/DefaultPromise.java",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "dubbo",
+    "repo": "apache/dubbo",
+    "ref": "3.2.12",
+    "commit": "1dd6a4aaa8816cf3f1585769dfff4f325e4ecd15",
+    "files": [
+      {
+        "path": "dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/support/AbstractClusterInvoker.java",
+        "sha256": "8bf6a24bb86bdfcaa975725d358242cf19ef6d34e13104ddee9cdab66ba13552",
+        "lines": 500,
+        "symbols": {
+          "select": [
+            71,
+            94,
+            141,
+            142,
+            144,
+            145,
+            151,
+            155,
+            156,
+            172,
+            178,
+            188,
+            199,
+            201,
+            202,
+            210,
+            214,
+            222,
+            231,
+            233,
+            243,
+            249,
+            251,
+            254,
+            258,
+            263,
+            265,
+            266,
+            267,
+            268,
+            270,
+            272,
+            274,
+            283,
+            284,
+            288,
+            289,
+            298,
+            299,
+            304,
+            305,
+            306,
+            309,
+            310,
+            311,
+            312,
+            314,
+            315,
+            320,
+            322,
+            323
+          ]
+        },
+        "url": "https://github.com/apache/dubbo/blob/1dd6a4aaa8816cf3f1585769dfff4f325e4ecd15/dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/support/AbstractClusterInvoker.java",
+        "status": "ok"
+      },
+      {
+        "path": "dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/support/FailoverClusterInvoker.java",
+        "sha256": "05990f3a8490dc9c00186bbfe681436dfb6bce010b61119fd1ad343259eaf4dd",
+        "lines": 143,
+        "symbols": {
+          "doInvoke": [
+            59
+          ]
+        },
+        "url": "https://github.com/apache/dubbo/blob/1dd6a4aaa8816cf3f1585769dfff4f325e4ecd15/dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/support/FailoverClusterInvoker.java",
+        "status": "ok"
+      },
+      {
+        "path": "dubbo-registry/dubbo-registry-api/src/main/java/org/apache/dubbo/registry/integration/RegistryDirectory.java",
+        "sha256": "db16aa193ed598b24f233b273b6e27322a2e8e5851e473eba41463b2b26a1a75",
+        "lines": 789,
+        "symbols": {
+          "refreshInvoker": [
+            254,
+            269
+          ]
+        },
+        "url": "https://github.com/apache/dubbo/blob/1dd6a4aaa8816cf3f1585769dfff4f325e4ecd15/dubbo-registry/dubbo-registry-api/src/main/java/org/apache/dubbo/registry/integration/RegistryDirectory.java",
+        "status": "ok"
+      },
+      {
+        "path": "dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/RouterChain.java",
+        "sha256": "dad1f8153f74f42530b8e918e4c6c4dffd65c667b08c4844bbf3b09302744ca3",
+        "lines": 246,
+        "symbols": {
+          "route": [
+            26,
+            27,
+            28,
+            29,
+            64,
+            77,
+            80,
+            117,
+            120,
+            121,
+            125,
+            142,
+            152,
+            162,
+            163,
+            164,
+            182,
+            195,
+            204,
+            225,
+            226,
+            227
+          ]
+        },
+        "url": "https://github.com/apache/dubbo/blob/1dd6a4aaa8816cf3f1585769dfff4f325e4ecd15/dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/RouterChain.java",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "kafka",
+    "repo": "apache/kafka",
+    "ref": "3.7.0",
+    "commit": "2ae524ed625438c5fee89e78648bd73e64a3ada0",
+    "files": [
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/KafkaConsumer.java",
+        "sha256": "87f8c4c9c66a1924e517ad545537dfee14de13c23f6e5ff869db75de6f148ecc",
+        "lines": 1806,
+        "symbols": {
+          "assign": [
+            96,
+            99,
+            100,
+            105,
+            117,
+            121,
+            122,
+            123,
+            129,
+            132,
+            279,
+            281,
+            283,
+            290,
+            295,
+            301,
+            304,
+            306,
+            307,
+            311,
+            312,
+            345,
+            346,
+            347,
+            351,
+            381,
+            383,
+            395,
+            611,
+            621,
+            626,
+            627,
+            628,
+            629,
+            630,
+            631,
+            633,
+            634,
+            648,
+            649,
+            650,
+            665,
+            670,
+            674,
+            677,
+            679,
+            687,
+            689,
+            690,
+            703,
+            705,
+            713,
+            724,
+            727,
+            729,
+            737,
+            748,
+            750,
+            759,
+            768,
+            769,
+            773,
+            775,
+            776,
+            778,
+            779,
+            781,
+            787,
+            788,
+            792,
+            817,
+            822,
+            831,
+            863,
+            895,
+            898,
+            900,
+            901,
+            938,
+            941,
+            943,
+            944,
+            971,
+            984,
+            987,
+            989,
+            990,
+            1019,
+            1032,
+            1035,
+            1037,
+            1038,
+            1100,
+            1147,
+            1161,
+            1171,
+            1174,
+            1184,
+            1190,
+            1207,
+            1239,
+            1400,
+            1504,
+            1508,
+            1520,
+            1541,
+            1567,
+            1692,
+            1723
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/clients/src/main/java/org/apache/kafka/clients/consumer/KafkaConsumer.java",
+        "status": "ok"
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/ConsumerCoordinator.java",
+        "sha256": "5fe666102d1e65f085a789911fda45369b37d538e27ecbe0194898befbccb0f5",
+        "lines": 1611,
+        "symbols": {
+          "commitOffsetsSync": [
+            1096,
+            1139
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/clients/src/main/java/org/apache/kafka/clients/consumer/internals/ConsumerCoordinator.java",
+        "status": "ok"
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/SubscriptionState.java",
+        "sha256": "63319c154fb45461073402a41e3ed440f0e943de37aa837d0b0995f8e1f60f93",
+        "lines": 1200,
+        "symbols": {
+          "assignFromUser": [
+            56,
+            219,
+            270
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/clients/src/main/java/org/apache/kafka/clients/consumer/internals/SubscriptionState.java",
+        "status": "ok"
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/Fetcher.java",
+        "sha256": "23e99e21ff69149b29c9b4a95c502395f3a0885b76a2a9e4e51c631d653a457c",
+        "lines": 211,
+        "symbols": {
+          "collectFetch": [
+            144,
+            145
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/clients/src/main/java/org/apache/kafka/clients/consumer/internals/Fetcher.java",
+        "status": "ok"
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/producer/internals/Sender.java",
+        "sha256": "e0a618608e0a0a2b34ec81e280b572484491f25f1c21f9377e485661d8ff7213",
+        "lines": 1104,
+        "symbols": {
+          "runOnce": [
+            252,
+            265,
+            285,
+            314
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/clients/src/main/java/org/apache/kafka/clients/producer/internals/Sender.java",
+        "status": "ok"
+      },
+      {
+        "path": "core/src/main/scala/kafka/cluster/Partition.scala",
+        "sha256": "98772d0c1be73b604b7517c307d029aa5dd80582d44e108e1765d0bf66a88c74",
+        "lines": 1992,
+        "symbols": {
+          "appendRecordsToLeader": [
+            1349
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/core/src/main/scala/kafka/cluster/Partition.scala",
+        "status": "ok"
+      },
+      {
+        "path": "core/src/main/scala/kafka/server/ReplicaFetcherThread.scala",
+        "sha256": "5ad1a3a7239f98ae6018393b414b1ae368ba04df9ad9cbd6cca147a1d1aec49c",
+        "lines": 195,
+        "symbols": {
+          "processPartitionData": [
+            103
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/core/src/main/scala/kafka/server/ReplicaFetcherThread.scala",
+        "status": "ok"
+      },
+      {
+        "path": "storage/src/main/java/org/apache/kafka/storage/internals/log/ProducerStateManager.java",
+        "sha256": "806ae5fe0742e3d20e03ca7c7095ebbd0343804696925ac7a722730f6cfc7fa1",
+        "lines": 751,
+        "symbols": {
+          "prepareUpdate": [
+            415
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/storage/src/main/java/org/apache/kafka/storage/internals/log/ProducerStateManager.java",
+        "status": "ok"
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/LegacyKafkaConsumer.java",
+        "sha256": "fd530948a9c79d8cc3ff27163061a1fa0b1050c55947ef0adb4aeff8345408cb",
+        "lines": 1276,
+        "symbols": {
+          "assign": [
+            135,
+            201,
+            215,
+            277,
+            288,
+            330,
+            397,
+            400,
+            432,
+            434,
+            435,
+            441,
+            444,
+            446,
+            465,
+            468,
+            473,
+            501,
+            512,
+            515,
+            517,
+            540,
+            546,
+            553,
+            557,
+            564,
+            566,
+            574,
+            602,
+            609,
+            803,
+            817,
+            834,
+            1186,
+            1187,
+            1240,
+            1241
+          ],
+          "poll": [
+            144,
+            509,
+            584,
+            585,
+            589,
+            590,
+            596,
+            617,
+            630,
+            651,
+            661,
+            662,
+            674,
+            679,
+            680,
+            683,
+            685,
+            686,
+            687,
+            688,
+            691,
+            843,
+            1042
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/clients/src/main/java/org/apache/kafka/clients/consumer/internals/LegacyKafkaConsumer.java",
+        "status": "ok"
+      },
+      {
+        "path": "core/src/main/scala/kafka/coordinator/group/GroupCoordinator.scala",
+        "sha256": "7beb3314e11ccb9da5861de5dd8c9a7c5989a455cf1041185ce8d45062c7f9dd",
+        "lines": 1847,
+        "symbols": {
+          "handleJoinGroup": [
+            159
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/core/src/main/scala/kafka/coordinator/group/GroupCoordinator.scala",
+        "status": "ok"
+      },
+      {
+        "path": "core/src/main/scala/kafka/coordinator/group/GroupMetadataManager.scala",
+        "sha256": "01c5b3ebbc51facca001fe0abd33f38ce7b3496cbc4809b7fe551fb05e864e85",
+        "lines": 1412,
+        "symbols": {
+          "partitionFor": [
+            195,
+            197,
+            199,
+            252,
+            268,
+            385,
+            477,
+            804,
+            877,
+            975
+          ]
+        },
+        "url": "https://github.com/apache/kafka/blob/2ae524ed625438c5fee89e78648bd73e64a3ada0/core/src/main/scala/kafka/coordinator/group/GroupMetadataManager.scala",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "zookeeper",
+    "repo": "apache/zookeeper",
+    "ref": "release-3.9.2",
+    "commit": "e454e8c7283100c7caec6dcae2bc82aaecb63023",
+    "files": [
+      {
+        "path": "zookeeper-recipes/zookeeper-recipes-lock/src/main/java/org/apache/zookeeper/recipes/lock/WriteLock.java",
+        "sha256": "a31d1de65657bf65e56e36e2af008fa7eb6a07485489dbc184b4c28c353f0d49",
+        "lines": 303,
+        "symbols": {
+          "LockZooKeeperOperation": [
+            57,
+            72,
+            174
+          ]
+        },
+        "url": "https://github.com/apache/zookeeper/blob/e454e8c7283100c7caec6dcae2bc82aaecb63023/zookeeper-recipes/zookeeper-recipes-lock/src/main/java/org/apache/zookeeper/recipes/lock/WriteLock.java",
+        "status": "ok"
+      },
+      {
+        "path": "zookeeper-server/src/main/java/org/apache/zookeeper/server/PrepRequestProcessor.java",
+        "sha256": "193256b36bd25c969b64aa32726615f59738744b9677422d248aaff15b0d657c",
+        "lines": 1122,
+        "symbols": {
+          "pRequest2Txn": [
+            315,
+            326,
+            639,
+            775,
+            779,
+            783,
+            787,
+            791,
+            795,
+            799,
+            803,
+            838,
+            883
+          ]
+        },
+        "url": "https://github.com/apache/zookeeper/blob/e454e8c7283100c7caec6dcae2bc82aaecb63023/zookeeper-server/src/main/java/org/apache/zookeeper/server/PrepRequestProcessor.java",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "lucene",
+    "repo": "apache/lucene",
+    "ref": "releases/lucene/9.9.2",
+    "commit": "a2939784c4ca60bc28bf488b5479c02fc2e5e22c",
+    "files": [
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/index/IndexWriter.java",
+        "sha256": "8595f48fbbfff1bacdac08a213605a0619267ae15e5144eab73202f2bd91608a",
+        "lines": 6643,
+        "symbols": {
+          "updateDocument": [
+            108,
+            1476,
+            1509,
+            1524,
+            1527,
+            1532,
+            1537,
+            1540,
+            1544,
+            1551,
+            1555,
+            1576,
+            1580,
+            1596,
+            1835,
+            1836,
+            1849,
+            1853,
+            1868,
+            3695
+          ],
+          "prepareCommit": [
+            272,
+            1318,
+            1352,
+            2436,
+            3573,
+            3574,
+            3581,
+            3583,
+            3619,
+            3624,
+            3635,
+            3718,
+            3728,
+            4000,
+            4035,
+            4057,
+            4103,
+            5599
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/index/IndexWriter.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.java",
+        "sha256": "af17cc3153ce3f2253130cd35dc54027e4dc5e8eb3e478de5431e32a766a09d5",
+        "lines": 738,
+        "symbols": {
+          "flush": [
+            91,
+            117,
+            121,
+            214,
+            261,
+            302,
+            310,
+            313,
+            316,
+            328,
+            337,
+            346,
+            347,
+            351,
+            365,
+            366,
+            368,
+            370,
+            376,
+            386,
+            396,
+            398,
+            400,
+            401,
+            402,
+            403,
+            414,
+            423,
+            426,
+            430,
+            432,
+            434,
+            436,
+            438,
+            439,
+            440,
+            455,
+            464,
+            473,
+            475,
+            476,
+            478,
+            482,
+            491,
+            496,
+            504,
+            528,
+            532,
+            534,
+            536,
+            537,
+            555,
+            572,
+            573,
+            578,
+            581,
+            593,
+            597,
+            599,
+            612,
+            656,
+            658,
+            661,
+            663,
+            734
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/index/StandardDirectoryReader.java",
+        "sha256": "90c597005b5352edcc198121b7e2add5754196a86150f4963df0bd82bcfdf0b7",
+        "lines": 593,
+        "symbols": {
+          "open": [
+            47,
+            64,
+            67,
+            70,
+            71,
+            113,
+            178,
+            209,
+            214,
+            221,
+            422,
+            473
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/index/StandardDirectoryReader.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+        "sha256": "f8da287e0420ec3538a0f4187a91f9ad35c0544bf88f59e5963e852ce46dfb8f",
+        "lines": 1209,
+        "symbols": {
+          "finishCommit": [
+            552,
+            902,
+            937,
+            979
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/codecs/lucene90/blocktree/SegmentTermsEnum.java",
+        "sha256": "b4a43c0ff99f13fde936f4d3b3f305d03fb4d5e3d420a1446693f4e9a4ac87d2",
+        "lines": 1256,
+        "symbols": {
+          "seekExact": [
+            331,
+            346,
+            1033,
+            1140,
+            1142,
+            1171
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/codecs/lucene90/blocktree/SegmentTermsEnum.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/codecs/lucene99/Lucene99PostingsReader.java",
+        "sha256": "33878bd310d9bfd2af29353ac19933d12c7d4a2f28819bf4ed1a2b3542dd6827",
+        "lines": 2074,
+        "symbols": {
+          "advance": [
+            371,
+            501,
+            539,
+            691,
+            869,
+            1118,
+            1169,
+            1186,
+            1195,
+            1197,
+            1210,
+            1212,
+            1404,
+            1422,
+            1431,
+            1437,
+            1441,
+            1443,
+            1836,
+            1858,
+            1867,
+            1873,
+            1877,
+            1879
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/codecs/lucene99/Lucene99PostingsReader.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/codecs/lucene99/ForUtil.java",
+        "sha256": "053087925f5d42a976bae103df514af8cba21aa5abcdf14e94e16e5a197fceb5",
+        "lines": 1148,
+        "symbols": {
+          "decode": [
+            303,
+            409,
+            412,
+            416,
+            420,
+            424,
+            428,
+            432,
+            436,
+            440,
+            444,
+            448,
+            452,
+            456,
+            460,
+            464,
+            468,
+            472,
+            476,
+            480,
+            484,
+            488,
+            492,
+            496,
+            500,
+            504,
+            508,
+            514,
+            515,
+            519,
+            523,
+            527,
+            531,
+            535,
+            539,
+            543,
+            547,
+            551,
+            555,
+            559,
+            563,
+            567,
+            571,
+            575,
+            579,
+            583,
+            587,
+            591,
+            595,
+            599,
+            603,
+            607,
+            611,
+            615,
+            621,
+            633,
+            641,
+            655,
+            661,
+            678,
+            690,
+            706,
+            710,
+            739,
+            756,
+            783,
+            795,
+            820,
+            836,
+            860,
+            864,
+            917,
+            946,
+            997,
+            1014,
+            1063,
+            1090,
+            1137
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/codecs/lucene99/ForUtil.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/util/fst/FST.java",
+        "sha256": "5ddbb2d4d7eb3d1092478aab61f99306051544120beb3ed84ebcbc2d94eadb31",
+        "lines": 1230,
+        "symbols": {
+          "findTargetArc": [
+            1049
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/util/fst/FST.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/similarities/BM25Similarity.java",
+        "sha256": "72ebfd87653c948c8532a737bce0a9eb296e2d1ef5d1ccdcfc38ffe632ff9c52",
+        "lines": 327,
+        "symbols": {
+          "idf": [
+            104,
+            150,
+            161,
+            164,
+            167,
+            169,
+            170,
+            178,
+            182,
+            185,
+            186,
+            189,
+            190,
+            191,
+            193,
+            199,
+            201,
+            202,
+            209,
+            223,
+            224,
+            232,
+            235,
+            237,
+            242,
+            270,
+            299,
+            300
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/search/similarities/BM25Similarity.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/util/hnsw/HnswGraphSearcher.java",
+        "sha256": "d0fef983532f1c9de16b2cd30cdbc6aa8a3c9d86829429f65d93573df1abaa64",
+        "lines": 322,
+        "symbols": {
+          "searchLevel": [
+            36,
+            115,
+            131,
+            137,
+            194
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/util/hnsw/HnswGraphSearcher.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/ConjunctionDISI.java",
+        "sha256": "5b5f10a1913ed83e26e010003cd1aa764f9219ee398fe792d0ecef3afed556d1",
+        "lines": 358,
+        "symbols": {
+          "doNext": [
+            165,
+            205,
+            217,
+            269,
+            276,
+            279
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/search/ConjunctionDISI.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/KnnFloatVectorQuery.java",
+        "sha256": "a66e96572153ae866d57c2e4a09ad2478f9ce0e2c43ef52ab088ce0153da3a62",
+        "lines": 120,
+        "symbols": {
+          "approximateSearch": [
+            79
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/search/KnnFloatVectorQuery.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/codecs/lucene99/PForUtil.java",
+        "sha256": "b0771d1d8b67a95a662051152a8205b68faf241508a650f12e0d1111e0889740",
+        "lines": 143,
+        "symbols": {
+          "decode": [
+            116,
+            123
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/codecs/lucene99/PForUtil.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/AbstractKnnVectorQuery.java",
+        "sha256": "ed21ac5dce9fd6a959341307910cd77ab0b5ab35ef004543623af425861633a7",
+        "lines": 468,
+        "symbols": {
+          "getLeafResults": [
+            99,
+            108
+          ],
+          "exactSearch": [
+            127,
+            136,
+            165
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/search/AbstractKnnVectorQuery.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/analysis/Analyzer.java",
+        "sha256": "28f8187b307b8cd08598296b1407a034bc51b37d9da71b5e0461ef8d7b4289b0",
+        "lines": 550,
+        "symbols": {
+          "tokenStream": [
+            40,
+            95,
+            144,
+            151,
+            153,
+            181,
+            183,
+            289,
+            307,
+            318,
+            343,
+            355,
+            411
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/analysis/Analyzer.java",
+        "status": "ok"
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/similarities/TFIDFSimilarity.java",
+        "sha256": "b673e98c05d30ca4a84b10291a8b12d906e2ecf0c439cc6fc90d953ec7a95188",
+        "lines": 541,
+        "symbols": {
+          "tf": [
+            229,
+            253,
+            256,
+            259,
+            260,
+            267,
+            370,
+            426,
+            507,
+            523,
+            525,
+            526,
+            528,
+            536
+          ],
+          "idf": [
+            53,
+            55,
+            56,
+            60,
+            230,
+            276,
+            279,
+            280,
+            281,
+            288,
+            360,
+            378,
+            389,
+            392,
+            395,
+            397,
+            398,
+            406,
+            410,
+            413,
+            414,
+            417,
+            418,
+            419,
+            421,
+            436,
+            472,
+            474,
+            475,
+            482,
+            487,
+            490,
+            491,
+            497,
+            499,
+            501,
+            522
+          ]
+        },
+        "url": "https://github.com/apache/lucene/blob/a2939784c4ca60bc28bf488b5479c02fc2e5e22c/lucene/core/src/java/org/apache/lucene/search/similarities/TFIDFSimilarity.java",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "eino",
+    "repo": "cloudwego/eino",
+    "ref": "v0.7.0",
+    "commit": "18427c201b3315586802260f8b20a97f6b008e8b",
+    "files": [
+      {
+        "path": "adk/runner.go",
+        "sha256": "fb05f45a3f7e11aa1d04abfaedb8bdfceb1764ad13013a6c9b9b03eb97f361da",
+        "lines": 227,
+        "symbols": {
+          "Runner": [
+            30,
+            32,
+            42,
+            59,
+            60,
+            69,
+            71,
+            98,
+            111,
+            134,
+            139,
+            169,
+            193,
+            195
+          ]
+        },
+        "url": "https://github.com/cloudwego/eino/blob/18427c201b3315586802260f8b20a97f6b008e8b/adk/runner.go",
+        "status": "ok"
+      },
+      {
+        "path": "adk/chatmodel.go",
+        "sha256": "414fef9968d271af4a548e21306c1e09d1532ff239da7fe8d0aa8c4878c94269",
+        "lines": 887,
+        "symbols": {
+          "ChatModelAgent": [
+            72,
+            116,
+            117,
+            133,
+            136,
+            143,
+            182,
+            202,
+            212,
+            228,
+            229,
+            249,
+            351,
+            355,
+            359,
+            372,
+            385,
+            508,
+            514,
+            543,
+            603,
+            605,
+            611,
+            766,
+            790,
+            797,
+            802,
+            807,
+            809
+          ]
+        },
+        "url": "https://github.com/cloudwego/eino/blob/18427c201b3315586802260f8b20a97f6b008e8b/adk/chatmodel.go",
+        "status": "ok"
+      },
+      {
+        "path": "compose/tool_node.go",
+        "sha256": "7e7d3db93fce4f0a074b6fabba2ea84bdaa7c97f34fef623f883e818e4616603",
+        "lines": 764,
+        "symbols": {
+          "ToolsNode": [
+            38,
+            39,
+            41,
+            42,
+            48,
+            49,
+            55,
+            58,
+            59,
+            63,
+            118,
+            119,
+            159,
+            162,
+            166,
+            183,
+            374,
+            550,
+            551,
+            553,
+            631,
+            632,
+            634,
+            728,
+            732
+          ]
+        },
+        "url": "https://github.com/cloudwego/eino/blob/18427c201b3315586802260f8b20a97f6b008e8b/compose/tool_node.go",
+        "status": "ok"
+      },
+      {
+        "path": "compose/checkpoint.go",
+        "sha256": "d25ea2658390859de987b1e4e907f05a689154df7fc6f8a40f359fc5983f1673",
+        "lines": 312,
+        "symbols": {
+          "CheckPointStore": [
+            50,
+            57,
+            166,
+            181
+          ]
+        },
+        "url": "https://github.com/cloudwego/eino/blob/18427c201b3315586802260f8b20a97f6b008e8b/compose/checkpoint.go",
+        "status": "ok"
+      },
+      {
+        "path": "flow/agent/react/react.go",
+        "sha256": "f4ac74eca35a066f3392a0110974861893edf791cf86068860704abf287f31c4",
+        "lines": 397,
+        "symbols": {
+          "MaxStep": [
+            69,
+            71,
+            235,
+            291
+          ]
+        },
+        "url": "https://github.com/cloudwego/eino/blob/18427c201b3315586802260f8b20a97f6b008e8b/flow/agent/react/react.go",
+        "status": "ok"
+      },
+      {
+        "path": "adk/react.go",
+        "sha256": "26a378afd06b934b90a6901b7ce152f43c52c3af3f37568ac0e80e29303444ed",
+        "lines": 268,
+        "symbols": {
+          "maxIterations": [
+            79,
+            122,
+            125
+          ],
+          "newReact": [
+            116
+          ]
+        },
+        "url": "https://github.com/cloudwego/eino/blob/18427c201b3315586802260f8b20a97f6b008e8b/adk/react.go",
+        "status": "ok"
+      },
+      {
+        "path": "components/embedding/interface.go",
+        "sha256": "9d96e0237bb2eb44569c38b8f419041489905bcb740de03e238e2458f6e5f7f4",
+        "lines": 24,
+        "symbols": {
+          "Embedder": [
+            22
+          ]
+        },
+        "url": "https://github.com/cloudwego/eino/blob/18427c201b3315586802260f8b20a97f6b008e8b/components/embedding/interface.go",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "leveldb",
+    "repo": "google/leveldb",
+    "ref": "1.23",
+    "commit": "99b3c03b3284f5886f9ef9a4ef703d57373e61be",
+    "files": [
+      {
+        "path": "db/db_impl.cc",
+        "sha256": "52453d1fb693010797cf299b76d204e53ebbd80568b5fd6a95727f787c4ef2cd",
+        "lines": 1559,
+        "symbols": {
+          "DBImpl::Write": [
+            43,
+            505,
+            1200
+          ],
+          "DBImpl::Get": [
+            1115,
+            1181,
+            1387,
+            1449
+          ]
+        },
+        "url": "https://github.com/google/leveldb/blob/99b3c03b3284f5886f9ef9a4ef703d57373e61be/db/db_impl.cc",
+        "status": "ok"
+      },
+      {
+        "path": "db/version_set.cc",
+        "sha256": "4a3029cca815fe176d716fd86461aa65083d9baceae1a878000e6ca7bc27d03b",
+        "lines": 1568,
+        "symbols": {
+          "Version::Get": [
+            324,
+            498
+          ],
+          "PickCompaction": [
+            1253
+          ]
+        },
+        "url": "https://github.com/google/leveldb/blob/99b3c03b3284f5886f9ef9a4ef703d57373e61be/db/version_set.cc",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "resilience",
+    "repo": "resilience4j/resilience4j",
+    "ref": "v2.2.0",
+    "commit": "e77f3536ac9b6c4764b1b8ac3dae0bca540768e4",
+    "files": [
+      {
+        "path": "resilience4j-circuitbreaker/src/main/java/io/github/resilience4j/circuitbreaker/internal/CircuitBreakerStateMachine.java",
+        "sha256": "50f1b81e1866b491f6304632bdfce3bcf59bc127c2815349393104deee2252fc",
+        "lines": 1190,
+        "symbols": {
+          "ClosedState": [
+            84,
+            323,
+            359,
+            360,
+            585,
+            590,
+            1173
+          ],
+          "HalfOpenState": [
+            382,
+            383,
+            716,
+            734,
+            811,
+            813,
+            1064,
+            1073,
+            1074,
+            1075,
+            1077,
+            1078,
+            1082,
+            1083,
+            1086
+          ]
+        },
+        "url": "https://github.com/resilience4j/resilience4j/blob/e77f3536ac9b6c4764b1b8ac3dae0bca540768e4/resilience4j-circuitbreaker/src/main/java/io/github/resilience4j/circuitbreaker/internal/CircuitBreakerStateMachine.java",
+        "status": "ok"
+      },
+      {
+        "path": "resilience4j-ratelimiter/src/main/java/io/github/resilience4j/ratelimiter/internal/AtomicRateLimiter.java",
+        "sha256": "e44213a71ce95b5135eb8183d5bff67e23c10c498b82238aa21d39032692fb6a",
+        "lines": 494,
+        "symbols": {
+          "reservePermission": [
+            130,
+            238,
+            291
+          ],
+          "State": [
+            43,
+            47,
+            54,
+            69,
+            83,
+            84,
+            85,
+            97,
+            98,
+            99,
+            120,
+            121,
+            132,
+            134,
+            140,
+            143,
+            152,
+            153,
+            156,
+            164,
+            165,
+            175,
+            176,
+            177,
+            180,
+            199,
+            208,
+            214,
+            215,
+            217,
+            218,
+            219,
+            220,
+            225,
+            226,
+            238,
+            240,
+            280,
+            286,
+            287,
+            289,
+            291,
+            299,
+            417,
+            431,
+            439,
+            470,
+            471,
+            472,
+            479,
+            480,
+            481,
+            488,
+            489,
+            490
+          ]
+        },
+        "url": "https://github.com/resilience4j/resilience4j/blob/e77f3536ac9b6c4764b1b8ac3dae0bca540768e4/resilience4j-ratelimiter/src/main/java/io/github/resilience4j/ratelimiter/internal/AtomicRateLimiter.java",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "id": "playwright",
+    "repo": "microsoft/playwright",
+    "ref": "v1.51.1",
+    "commit": "0ad26b38902449d9347536c97a34cc5dedbec729",
+    "files": [
+      {
+        "path": "packages/playwright-core/src/server/dom.ts",
+        "sha256": "e1c1220e3005f6589bbfbbfecb8911016798a4b444911333a2c7f30da27e79a6",
+        "lines": 991,
+        "symbols": {
+          "_retryPointerAction": [
+            364,
+            530,
+            543,
+            556,
+            569
+          ],
+          "_performPointerAction": [
+            380,
+            384
+          ]
+        },
+        "url": "https://github.com/microsoft/playwright/blob/0ad26b38902449d9347536c97a34cc5dedbec729/packages/playwright-core/src/server/dom.ts",
+        "status": "ok"
+      }
+    ]
+  }
+]

@@ -1,0 +1,711 @@
+[
+  {
+    "id": "jdk",
+    "repo": "openjdk/jdk17u",
+    "ref": "jdk-17.0.14+7",
+    "files": [
+      {
+        "path": "src/java.base/share/classes/java/lang/ClassLoader.java",
+        "symbols": [
+          "loadClass",
+          "defineClass"
+        ]
+      },
+      {
+        "path": "src/java.base/share/classes/java/net/URLClassLoader.java",
+        "symbols": [
+          "close"
+        ]
+      },
+      {
+        "path": "src/hotspot/share/oops/instanceKlass.cpp",
+        "symbols": [
+          "initialize_impl"
+        ]
+      },
+      {
+        "path": "src/hotspot/share/classfile/classLoaderDataGraph.cpp",
+        "symbols": [
+          "do_unloading"
+        ]
+      },
+      {
+        "path": "src/hotspot/share/memory/metaspace/metaspaceArena.cpp",
+        "symbols": [
+          "allocate"
+        ]
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/HashMap.java",
+        "symbols": [
+          "resize",
+          "treeifyBin",
+          "find(int h"
+        ]
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java",
+        "symbols": [
+          "putVal",
+          "transfer",
+          "computeIfAbsent"
+        ]
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/LinkedHashMap.java",
+        "symbols": [
+          "afterNodeAccess",
+          "afterNodeInsertion"
+        ]
+      },
+      {
+        "path": "src/java.base/share/classes/java/lang/ThreadLocal.java",
+        "symbols": [
+          "expungeStaleEntry",
+          "getEntry"
+        ]
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/concurrent/ThreadPoolExecutor.java",
+        "symbols": [
+          "execute",
+          "runWorker",
+          "processWorkerExit"
+        ]
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/concurrent/locks/AbstractQueuedSynchronizer.java",
+        "symbols": [
+          "acquire",
+          "release"
+        ]
+      },
+      {
+        "path": "src/java.base/share/classes/java/util/concurrent/locks/ReentrantLock.java",
+        "symbols": [
+          "tryAcquire",
+          "tryRelease"
+        ]
+      },
+      {
+        "path": "src/hotspot/share/classfile/classFileParser.cpp",
+        "symbols": [
+          "ClassFileParser::ClassFileParser",
+          "parse_stream"
+        ]
+      },
+      {
+        "path": "src/hotspot/share/interpreter/linkResolver.cpp",
+        "symbols": [
+          "resolve_method",
+          "resolve_field"
+        ]
+      },
+      {
+        "path": "src/hotspot/share/classfile/verifier.cpp",
+        "symbols": [
+          "Verifier::verify"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "redis",
+    "repo": "redis/redis",
+    "ref": "7.2.4",
+    "files": [
+      {
+        "path": "src/t_list.c",
+        "symbols": [
+          "listType"
+        ]
+      },
+      {
+        "path": "src/quicklist.c",
+        "symbols": [
+          "quicklistPush"
+        ]
+      },
+      {
+        "path": "src/listpack.c",
+        "symbols": [
+          "lpInsert"
+        ]
+      },
+      {
+        "path": "src/t_zset.c",
+        "symbols": [
+          "zslInsert"
+        ]
+      },
+      {
+        "path": "src/dict.c",
+        "symbols": [
+          "dictRehash"
+        ]
+      },
+      {
+        "path": "src/evict.c",
+        "symbols": [
+          "performEvictions"
+        ]
+      },
+      {
+        "path": "src/cluster.c",
+        "symbols": [
+          "keyHashSlot"
+        ]
+      },
+      {
+        "path": "src/lazyfree.c",
+        "symbols": [
+          "lazyfreeGetFreeEffort"
+        ]
+      },
+      {
+        "path": "src/db.c",
+        "symbols": [
+          "expireIfNeeded"
+        ]
+      },
+      {
+        "path": "src/networking.c",
+        "symbols": [
+          "processInputBuffer"
+        ]
+      },
+      {
+        "path": "src/aof.c",
+        "symbols": [
+          "rewriteAppendOnlyFileBackground"
+        ]
+      },
+      {
+        "path": "src/replication.c",
+        "symbols": [
+          "masterTryPartialResynchronization"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mysql",
+    "repo": "mysql/mysql-server",
+    "ref": "mysql-8.0.36",
+    "files": [
+      {
+        "path": "sql/sql_optimizer.cc",
+        "symbols": [
+          "test_if_skip_sort_order"
+        ]
+      },
+      {
+        "path": "sql/filesort.cc",
+        "symbols": [
+          "check_if_pq_applicable"
+        ]
+      },
+      {
+        "path": "sql/range_optimizer/range_optimizer.cc",
+        "symbols": [
+          "test_quick_select"
+        ]
+      },
+      {
+        "path": "storage/innobase/row/row0sel.cc",
+        "symbols": [
+          "row_search_mvcc"
+        ]
+      },
+      {
+        "path": "storage/innobase/include/read0types.h",
+        "symbols": [
+          "changes_visible"
+        ]
+      },
+      {
+        "path": "storage/innobase/row/row0vers.cc",
+        "symbols": [
+          "row_vers_build_for_consistent_read"
+        ]
+      },
+      {
+        "path": "storage/innobase/buf/buf0lru.cc",
+        "symbols": [
+          "buf_LRU_make_block_young"
+        ]
+      },
+      {
+        "path": "storage/innobase/lock/lock0lock.cc",
+        "symbols": [
+          "lock_rec"
+        ]
+      },
+      {
+        "path": "storage/innobase/btr/btr0cur.cc",
+        "symbols": [
+          "btr_cur_search_to_nth_level"
+        ]
+      },
+      {
+        "path": "storage/innobase/read/read0read.cc",
+        "symbols": [
+          "view_open"
+        ]
+      },
+      {
+        "path": "storage/innobase/include/buf0buf.ic",
+        "symbols": [
+          "buf_page_peek_if_too_old"
+        ]
+      },
+      {
+        "path": "sql/binlog.cc",
+        "symbols": [
+          "ordered_commit"
+        ]
+      },
+      {
+        "path": "storage/innobase/trx/trx0trx.cc",
+        "symbols": [
+          "trx_commit_for_mysql"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "linux",
+    "repo": "torvalds/linux",
+    "ref": "v6.6",
+    "files": [
+      {
+        "path": "kernel/nsproxy.c",
+        "symbols": [
+          "copy_namespaces"
+        ]
+      },
+      {
+        "path": "kernel/cgroup/cgroup.c",
+        "symbols": [
+          "cgroup_attach_task"
+        ]
+      },
+      {
+        "path": "kernel/sched/fair.c",
+        "symbols": [
+          "throttle_cfs_rq"
+        ]
+      },
+      {
+        "path": "fs/eventpoll.c",
+        "symbols": [
+          "ep_poll"
+        ]
+      },
+      {
+        "path": "Documentation/admin-guide/cgroup-v2.rst",
+        "symbols": [
+          "cpu.max"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "k8s",
+    "repo": "kubernetes/kubernetes",
+    "ref": "v1.29.0",
+    "files": [
+      {
+        "path": "pkg/controller/deployment/sync.go",
+        "symbols": [
+          "syncDeploymentStatus"
+        ]
+      },
+      {
+        "path": "pkg/controller/endpointslice/endpointslice_controller.go",
+        "symbols": [
+          "syncService"
+        ]
+      },
+      {
+        "path": "pkg/controller/podautoscaler/horizontal.go",
+        "symbols": [
+          "reconcileAutoscaler"
+        ]
+      },
+      {
+        "path": "pkg/controller/podautoscaler/replica_calculator.go",
+        "symbols": [
+          "GetResourceReplicas"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "netty",
+    "repo": "netty/netty",
+    "ref": "netty-4.1.108.Final",
+    "files": [
+      {
+        "path": "transport/src/main/java/io/netty/channel/nio/NioEventLoop.java",
+        "symbols": [
+          "processSelectedKeys"
+        ]
+      },
+      {
+        "path": "transport/src/main/java/io/netty/channel/ChannelOutboundBuffer.java",
+        "symbols": [
+          "setUnwritable"
+        ]
+      },
+      {
+        "path": "common/src/main/java/io/netty/util/concurrent/SingleThreadEventExecutor.java",
+        "symbols": [
+          "execute"
+        ]
+      },
+      {
+        "path": "common/src/main/java/io/netty/util/concurrent/DefaultPromise.java",
+        "symbols": [
+          "notifyListeners"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dubbo",
+    "repo": "apache/dubbo",
+    "ref": "3.2.12",
+    "files": [
+      {
+        "path": "dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/support/AbstractClusterInvoker.java",
+        "symbols": [
+          "select"
+        ]
+      },
+      {
+        "path": "dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/support/FailoverClusterInvoker.java",
+        "symbols": [
+          "doInvoke"
+        ]
+      },
+      {
+        "path": "dubbo-registry/dubbo-registry-api/src/main/java/org/apache/dubbo/registry/integration/RegistryDirectory.java",
+        "symbols": [
+          "refreshInvoker"
+        ]
+      },
+      {
+        "path": "dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/RouterChain.java",
+        "symbols": [
+          "route"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kafka",
+    "repo": "apache/kafka",
+    "ref": "3.7.0",
+    "files": [
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/KafkaConsumer.java",
+        "symbols": [
+          "assign"
+        ]
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/ConsumerCoordinator.java",
+        "symbols": [
+          "commitOffsetsSync"
+        ]
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/SubscriptionState.java",
+        "symbols": [
+          "assignFromUser"
+        ]
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/Fetcher.java",
+        "symbols": [
+          "collectFetch"
+        ]
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/producer/internals/Sender.java",
+        "symbols": [
+          "runOnce"
+        ]
+      },
+      {
+        "path": "core/src/main/scala/kafka/cluster/Partition.scala",
+        "symbols": [
+          "appendRecordsToLeader"
+        ]
+      },
+      {
+        "path": "core/src/main/scala/kafka/server/ReplicaFetcherThread.scala",
+        "symbols": [
+          "processPartitionData"
+        ]
+      },
+      {
+        "path": "storage/src/main/java/org/apache/kafka/storage/internals/log/ProducerStateManager.java",
+        "symbols": [
+          "prepareUpdate"
+        ]
+      },
+      {
+        "path": "clients/src/main/java/org/apache/kafka/clients/consumer/internals/LegacyKafkaConsumer.java",
+        "symbols": [
+          "assign",
+          "poll"
+        ]
+      },
+      {
+        "path": "core/src/main/scala/kafka/coordinator/group/GroupCoordinator.scala",
+        "symbols": [
+          "handleJoinGroup"
+        ]
+      },
+      {
+        "path": "core/src/main/scala/kafka/coordinator/group/GroupMetadataManager.scala",
+        "symbols": [
+          "partitionFor"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "zookeeper",
+    "repo": "apache/zookeeper",
+    "ref": "release-3.9.2",
+    "files": [
+      {
+        "path": "zookeeper-recipes/zookeeper-recipes-lock/src/main/java/org/apache/zookeeper/recipes/lock/WriteLock.java",
+        "symbols": [
+          "LockZooKeeperOperation"
+        ]
+      },
+      {
+        "path": "zookeeper-server/src/main/java/org/apache/zookeeper/server/PrepRequestProcessor.java",
+        "symbols": [
+          "pRequest2Txn"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lucene",
+    "repo": "apache/lucene",
+    "ref": "releases/lucene/9.9.2",
+    "files": [
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/index/IndexWriter.java",
+        "symbols": [
+          "updateDocument",
+          "prepareCommit"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/index/DocumentsWriterPerThread.java",
+        "symbols": [
+          "flush"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/index/StandardDirectoryReader.java",
+        "symbols": [
+          "open"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+        "symbols": [
+          "finishCommit"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/codecs/lucene90/blocktree/SegmentTermsEnum.java",
+        "symbols": [
+          "seekExact"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/codecs/lucene99/Lucene99PostingsReader.java",
+        "symbols": [
+          "advance"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/codecs/lucene99/ForUtil.java",
+        "symbols": [
+          "decode"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/util/fst/FST.java",
+        "symbols": [
+          "findTargetArc"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/similarities/BM25Similarity.java",
+        "symbols": [
+          "idf"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/util/hnsw/HnswGraphSearcher.java",
+        "symbols": [
+          "searchLevel"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/ConjunctionDISI.java",
+        "symbols": [
+          "doNext"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/KnnFloatVectorQuery.java",
+        "symbols": [
+          "approximateSearch"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/codecs/lucene99/PForUtil.java",
+        "symbols": [
+          "decode"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/AbstractKnnVectorQuery.java",
+        "symbols": [
+          "getLeafResults",
+          "exactSearch"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/analysis/Analyzer.java",
+        "symbols": [
+          "tokenStream"
+        ]
+      },
+      {
+        "path": "lucene/core/src/java/org/apache/lucene/search/similarities/TFIDFSimilarity.java",
+        "symbols": [
+          "tf",
+          "idf"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eino",
+    "repo": "cloudwego/eino",
+    "ref": "v0.7.0",
+    "files": [
+      {
+        "path": "adk/runner.go",
+        "symbols": [
+          "Runner"
+        ]
+      },
+      {
+        "path": "adk/chatmodel.go",
+        "symbols": [
+          "ChatModelAgent"
+        ]
+      },
+      {
+        "path": "compose/tool_node.go",
+        "symbols": [
+          "ToolsNode"
+        ]
+      },
+      {
+        "path": "compose/checkpoint.go",
+        "symbols": [
+          "CheckPointStore"
+        ]
+      },
+      {
+        "path": "flow/agent/react/react.go",
+        "symbols": [
+          "MaxStep"
+        ]
+      },
+      {
+        "path": "adk/react.go",
+        "symbols": [
+          "maxIterations",
+          "newReact"
+        ]
+      },
+      {
+        "path": "components/embedding/interface.go",
+        "symbols": [
+          "Embedder"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "leveldb",
+    "repo": "google/leveldb",
+    "ref": "1.23",
+    "files": [
+      {
+        "path": "db/db_impl.cc",
+        "symbols": [
+          "DBImpl::Write",
+          "DBImpl::Get"
+        ]
+      },
+      {
+        "path": "db/version_set.cc",
+        "symbols": [
+          "Version::Get",
+          "PickCompaction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "resilience",
+    "repo": "resilience4j/resilience4j",
+    "ref": "v2.2.0",
+    "files": [
+      {
+        "path": "resilience4j-circuitbreaker/src/main/java/io/github/resilience4j/circuitbreaker/internal/CircuitBreakerStateMachine.java",
+        "symbols": [
+          "ClosedState",
+          "HalfOpenState"
+        ]
+      },
+      {
+        "path": "resilience4j-ratelimiter/src/main/java/io/github/resilience4j/ratelimiter/internal/AtomicRateLimiter.java",
+        "symbols": [
+          "reservePermission",
+          "State"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "playwright",
+    "repo": "microsoft/playwright",
+    "ref": "v1.51.1",
+    "files": [
+      {
+        "path": "packages/playwright-core/src/server/dom.ts",
+        "symbols": [
+          "_retryPointerAction",
+          "_performPointerAction"
+        ]
+      }
+    ]
+  }
+]

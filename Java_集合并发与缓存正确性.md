@@ -1,6 +1,8 @@
 # Java：从一个 HashMap 到线程安全缓存
 
-这篇围绕一件事展开：既要快速找对象，又要让多个线程共同维护正确状态。HashMap 的具体拆桶例子参照 OpenJDK 8；并发 API 语义参照 Java 21，避免混用不同版本实现。
+实现层续篇：[集合、并发与算法源码](源码精读_02_Java集合并发与算法.md)，包括拆桶、并发迁移、AQS/Condition、ThreadLocal 和可运行实验。
+
+这篇围绕一件事展开：既要快速找对象，又要让多个线程共同维护正确状态。HashMap 的具体拆桶例子参照固定的 OpenJDK 17.0.14+7 源码；并发 API 语义另参照 Java 21，不把 API 文档版本混作源码基线。
 
 ## 1. 桶下标是怎样算出来的
 
@@ -18,7 +20,7 @@
  19 → 桶 3
 ```
 
-扩成两倍后，只多看原容量代表的那一位。原桶中的节点要么留在原位置，要么移动到“原位置 + 原容量”。OpenJDK 8 的链表拆分据此划分高低两组，并使用已保存的哈希值；不是普通 HashMap 在扩容期间自动执行“两个数组双查”的并发迁移协议。[源码：HashMap.resize](https://github.com/openjdk/jdk8u/blob/master/jdk/src/share/classes/java/util/HashMap.java)
+扩成两倍后，只多看原容量代表的那一位。原桶中的节点要么留在原位置，要么移动到“原位置 + 原容量”。该版本的链表拆分据此划分高低两组，并使用已保存的哈希值；不是普通 HashMap 在扩容期间自动执行“两个数组双查”的并发迁移协议。[固定源码：HashMap.resize](https://github.com/openjdk/jdk17u/blob/c5c90ffa45d0c14bcb013164f0992938eb4740ab/src/java.base/share/classes/java/util/HashMap.java)
 
 0.75 是常见默认负载因子，表达元素数量相对容量的扩容阈值，不是“某个桶用到了 75%”。冲突桶树化还受容量等条件影响；不能说“只要到八个就无条件变红黑树”。平均常数时间依赖哈希分布与负载，不是所有输入都同样快。
 

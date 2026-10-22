@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="128" viewBox="0 0 720 128">
+  <title>评测的目标校验、执行与业务判定</title>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#444"/></marker></defs>
+  <rect width="720" height="128" fill="#fff"/>
+  <g fill="none" stroke="#444" stroke-width="1">
+    <rect x="16" y="36" width="112" height="56"/>
+    <rect x="160" y="36" width="112" height="56"/>
+    <rect x="304" y="36" width="112" height="56"/>
+    <rect x="448" y="36" width="112" height="56"/>
+    <rect x="592" y="36" width="112" height="56"/>
+    <path d="M128 64 H154" marker-end="url(#a)"/>
+    <path d="M272 64 H298" marker-end="url(#a)"/>
+    <path d="M416 64 H442" marker-end="url(#a)"/>
+    <path d="M560 64 H586" marker-end="url(#a)"/>
+  </g>
+  <g fill="#000" font-family="PingFang SC,sans-serif" font-size="18" text-anchor="middle">
+    <text x="72" y="70">部署就绪</text>
+    <text x="216" y="70">核对版本</text>
+    <text x="360" y="70">用例回放</text>
+    <text x="504" y="70">业务判定</text>
+    <text x="648" y="70">结果报告</text>
+  </g>
+</svg>

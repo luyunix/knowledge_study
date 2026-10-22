@@ -13,6 +13,19 @@ const {marked} = await import(process.env.MARKED_MODULE || 'marked');
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const documentName=process.argv[2] || '索引结构图解_正排与倒排.md';
 const configs={
+  '源码精读_00_总览与版本锁定.md':{images:0,dir:'assets/source-level'},
+  '源码精读_01_JVM类加载与卸载.md':{images:1,dir:'assets/source-level'},
+  '源码精读_02_Java集合并发与算法.md':{images:1,dir:'assets/source-level'},
+  '源码精读_03_Redis结构与热点治理.md':{images:1,dir:'assets/source-level'},
+  '源码精读_04_MySQL索引事务与BufferPool.md':{images:1,dir:'assets/source-level'},
+  '源码精读_05_容器Proxy与版本路由.md':{images:1,dir:'assets/source-level'},
+  '源码精读_06_任务构建Kafka与恢复.md':{images:1,dir:'assets/source-level'},
+  '源码精读_07_Lucene索引与检索.md':{images:1,dir:'assets/source-level'},
+  '源码精读_08_特征排序与评估实现.md':{images:1,dir:'assets/source-level'},
+  '源码精读_09_Agent执行与评测实现.md':{images:1,dir:'assets/source-level'},
+  'Agent工程_01_Skill工具执行与状态恢复.md':{images:1,dir:'assets/agent-delivery'},
+  'Agent工程_02_badcase评测与持续迭代.md':{images:1,dir:'assets/agent-delivery'},
+  '多版本研发平台_部署路由与Dubbo服务发现.md':{images:4,dir:'assets/platform-versions'},
   '索引结构图解_正排与倒排.md':{images:8,dir:'assets/index-structures'},
   '索引结构进阶_FST与整数压缩.md':{images:5,dir:'assets/index-structures'},
   'Kafka到检索引擎_数据链路与高可用.md':{images:7,dir:'assets/kafka-ingestion'},
@@ -29,7 +42,8 @@ const configs={
   '工程知识学习路线.md':{images:0,dir:'assets/engineering-foundations'},
   'README.md':{images:0,dir:'assets/engineering-foundations'}
 };
-const config=configs[documentName];
+const config=configs[documentName] || (/^实现详解_\d\d_.*\.md$/.test(documentName)
+  ? {images:documentName.startsWith('实现详解_00_')?0:1,dir:'assets/deep-points'} : null);
 assert.ok(config,'Unknown document');
 const expectedImages=config.images;
 const dir = path.join(root, config.dir);
@@ -37,7 +51,8 @@ const browser = await chromium.launch({headless:true});
 const diagnostics = [];
 try {
   const page = await browser.newPage({viewport:{width:640,height:1000},deviceScaleFactor:2});
-  for (const name of (process.env.SKIP_FIGURES ? [] : fs.readdirSync(dir).filter(x=>x.endsWith('.svg')).sort())) {
+  const figureIds=process.env.FIGURE_IDS?.split(',');
+  for (const name of (process.env.SKIP_FIGURES ? [] : fs.readdirSync(dir).filter(x=>x.endsWith('.svg')&&(!figureIds||figureIds.includes(x.replace('.svg','')))).sort())) {
     await page.goto(pathToFileURL(path.join(dir,name)).href);
     await page.evaluate(()=>document.fonts.ready);
     const issues = await page.evaluate(()=>{

@@ -1,4 +1,6 @@
 .DS_Store
+.source-cache/
+.source-qa/
 __pycache__/
 *.py[cod]
 .venv/

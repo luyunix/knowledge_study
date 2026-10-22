@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="450" viewBox="0 0 720 450">
+  <title>多版本研发平台架构示意</title>
+  <desc>请求经统一入口进入独立部署的 Proxy 集群，Proxy 根据平台版本规则和注册中心实例列表，将请求发往对应版本的一个 Pod。所有框为直角，实线为请求，虚线为规则和发现信息。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1,1 L7,4 L1,7" fill="none" stroke="#555" stroke-width="1"/></marker>
+  </defs>
+  <rect width="720" height="450" fill="#fff"/>
+  <g fill="none" stroke="#555" stroke-width="1.2">
+    <rect x="300" y="54" width="120" height="40"/>
+    <rect x="190" y="136" width="340" height="106"/>
+    <rect x="214" y="180" width="128" height="40"/>
+    <rect x="378" y="180" width="128" height="40"/>
+    <rect x="20" y="172" width="135" height="56"/>
+    <rect x="565" y="172" width="135" height="56"/>
+    <rect x="70" y="318" width="270" height="95"/>
+    <rect x="400" y="318" width="240" height="95"/>
+    <rect x="84" y="361" width="70" height="36"/>
+    <rect x="170" y="361" width="70" height="36"/>
+    <rect x="256" y="361" width="70" height="36"/>
+    <rect x="428" y="361" width="78" height="36"/>
+    <rect x="534" y="361" width="78" height="36"/>
+    <path d="M360 31 V48" marker-end="url(#arrow)"/>
+    <path d="M360 94 V130" marker-end="url(#arrow)"/>
+    <path d="M270 242 V276 H205 V312" marker-end="url(#arrow)"/>
+    <path d="M450 242 V276 H520 V312" marker-end="url(#arrow)"/>
+    <path d="M155 200 H184" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+    <path d="M565 200 H536" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="PingFang SC, sans-serif" font-size="17" fill="#222" text-anchor="middle">
+    <text x="360" y="23">业务请求</text>
+    <text x="360" y="80">统一入口</text>
+    <text x="360" y="162">Proxy 集群 · 独立部署</text>
+    <text x="278" y="206">Proxy 1</text>
+    <text x="442" y="206">Proxy 2</text>
+    <text x="87" y="194">平台控制面</text>
+    <text x="87" y="217" font-size="15" fill="#666">版本规则</text>
+    <text x="632" y="194">注册中心</text>
+    <text x="632" y="217" font-size="15" fill="#666">版本实例列表</text>
+    <text x="278" y="303" font-size="15" fill="#666">选择 v1 实例</text>
+    <text x="593" y="303" font-size="15" fill="#666">选择 v2 实例</text>
+    <text x="205" y="343">业务版本 v1</text>
+    <text x="520" y="343">业务版本 v2</text>
+    <text x="119" y="385" font-size="16">Pod A</text>
+    <text x="205" y="385" font-size="16">Pod B</text>
+    <text x="291" y="385" font-size="16">Pod C</text>
+    <text x="467" y="385" font-size="16">Pod D</text>
+    <text x="573" y="385" font-size="16">Pod E</text>
+    <text x="360" y="439" font-size="14" fill="#666">实线：业务请求　　虚线：规则与发现信息</text>
+  </g>
+</svg>

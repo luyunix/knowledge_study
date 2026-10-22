@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240">
+  <title>Skill 操作知识与工具执行的职责</title>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#444"/></marker></defs>
+  <rect width="720" height="240" fill="#fff"/>
+  <g fill="none" stroke="#444" stroke-width="1">
+    <rect x="16" y="86" width="136" height="68"/>
+    <rect x="218" y="26" width="232" height="188"/>
+    <rect x="236" y="81" width="196" height="46"/>
+    <rect x="236" y="151" width="196" height="40"/>
+    <rect x="528" y="26" width="176" height="188"/>
+    <rect x="544" y="81" width="144" height="46"/>
+    <rect x="544" y="151" width="144" height="40"/>
+    <path d="M152 120 H212" marker-end="url(#a)"/>
+    <path d="M450 104 H522" marker-end="url(#a)"/>
+    <path d="M528 171 H456" marker-end="url(#a)"/>
+  </g>
+  <g fill="#000" font-family="PingFang SC,sans-serif" font-size="18" text-anchor="middle">
+    <text x="84" y="113">Skill 资源</text>
+    <text x="84" y="139" font-size="16">操作方法</text>
+    <text x="334" y="54">Agent 执行上下文</text>
+    <text x="334" y="110">任务与目标</text>
+    <text x="334" y="177">已加载的 Skill 内容</text>
+    <text x="616" y="54">平台服务</text>
+    <text x="616" y="110">发布任务</text>
+    <text x="616" y="177">状态查询</text>
+    <text x="184" y="105" font-size="15">读取</text>
+    <text x="489" y="91" font-size="15">调用</text>
+    <text x="489" y="158" font-size="15">结果</text>
+  </g>
+</svg>
