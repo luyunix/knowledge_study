@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1040" viewBox="0 0 800 1040" role="img" aria-labelledby="title description">
+<title id="title">商家活动确认执行与恢复</title><desc id="description">确认草案后持久化唯一操作，业务短事务预占预算并创建活动；响应丢失后查询原操作，复用成功结果或继续等待恢复。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#425a70"/></marker></defs>
+<rect width="800" height="1040" fill="white"/><g font-family="PingFang SC,Heiti SC,Microsoft YaHei,sans-serif">
+<text x="32" y="48" font-size="32" font-weight="600" fill="#172c43">商家活动：确认、执行与恢复</text>
+<text x="32" y="91" font-size="25" font-weight="400" fill="#172c43">教学设定：可用预算 1000 元，申请预占 600 元。</text>
+<rect x="32" y="120" width="736" height="136" fill="#eef3f7" stroke="#9eafbf"/><text x="52" y="157" font-size="27" font-weight="600" fill="#172c43">① 草案 D17 / v3</text><text x="52" y="198" font-size="25" font-weight="400" fill="#172c43">商品、优惠、时间、600 元额度</text><text x="52" y="234" font-size="25" font-weight="400" fill="#172c43">尚未确认，不允许创建活动。</text>
+<path d="M 400 265 L 400 296" fill="none" stroke="#425a70" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="310" width="736" height="136" fill="#e2eefb" stroke="#9eafbf"/><text x="52" y="347" font-size="27" font-weight="600" fill="#172c43">② 商家确认，保存唯一操作 O9</text><text x="52" y="388" font-size="25" font-weight="400" fill="#172c43">冻结参数、确认人和规则版本。</text><text x="52" y="424" font-size="25" font-weight="400" fill="#172c43">重复确认仍返回 O9；此时预算尚未预占。</text>
+<path d="M 400 455 L 400 486" fill="none" stroke="#425a70" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="500" width="736" height="172" fill="#dcf2e6" stroke="#9eafbf"/><text x="52" y="537" font-size="27" font-weight="600" fill="#172c43">③ worker 执行短事务</text><text x="52" y="578" font-size="25" font-weight="400" fill="#172c43">锁 O9 → 条件预占 → 创建活动</text><text x="52" y="614" font-size="25" font-weight="400" fill="#172c43">预占明细、活动、结果和 outbox 一起提交。</text><text x="52" y="650" font-size="25" font-weight="400" fill="#172c43">技术异常整体回滚，O9 仍可恢复。</text>
+<path d="M 400 681 L 400 712" fill="none" stroke="#425a70" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="32" y="752" font-size="27" font-weight="600" fill="#172c43">④ 响应丢失后，按 O9 查询权威状态</text>
+<rect x="32" y="778" width="354" height="128" fill="#dcf2e6" stroke="#9eafbf"/><text x="52" y="815" font-size="27" font-weight="600" fill="#172c43">SUCCEEDED</text><text x="52" y="856" font-size="25" font-weight="400" fill="#172c43">返回原活动 A88。</text><text x="52" y="892" font-size="25" font-weight="400" fill="#172c43">不再次预占 600 元。</text>
+<rect x="414" y="778" width="354" height="128" fill="#fff0db" stroke="#9eafbf"/><text x="434" y="815" font-size="27" font-weight="600" fill="#172c43">PENDING</text><text x="434" y="856" font-size="25" font-weight="400" fill="#172c43">等待或同编号恢复。</text><text x="434" y="892" font-size="25" font-weight="400" fill="#172c43">不换新操作编号。</text>
+<text x="32" y="955" font-size="25" font-weight="600" fill="#172c43">O9 成功后：可用 400 元，预占 600 元。</text>
+<text x="32" y="997" font-size="25" font-weight="400" fill="#172c43">查询暂时不可用：保留结果待确认，继续核对原操作。</text>
+</g></svg>

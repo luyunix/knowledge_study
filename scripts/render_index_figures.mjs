@@ -25,6 +25,7 @@ const configs={
   '源码精读_09_Agent执行与评测实现.md':{images:1,dir:'assets/source-level'},
   'Agent工程_01_Skill工具执行与状态恢复.md':{images:1,dir:'assets/agent-delivery'},
   'Agent工程_02_badcase评测与持续迭代.md':{images:1,dir:'assets/agent-delivery'},
+  'Agent工程_03_商家活动创建与预算一致性.md':{images:1,dir:'assets/agent-marketing'},
   '多版本研发平台_部署路由与Dubbo服务发现.md':{images:4,dir:'assets/platform-versions'},
   '索引结构图解_正排与倒排.md':{images:8,dir:'assets/index-structures'},
   '索引结构进阶_FST与整数压缩.md':{images:5,dir:'assets/index-structures'},
